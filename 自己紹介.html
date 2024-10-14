@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            transition: background-color 0.5s;
+        }
+
+        .section {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section:hover {
+            background-color: #f7f7f7;
+        }
+
+        h1, h2, h3, h4 {
+            color: #3498db;
+            cursor: pointer;
+        }
+
+        h1:hover, h2:hover, h3:hover, h4:hover {
+            text-decoration: underline;
+        }
+
+        ul, table {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>自己紹介</h1>
+        <ul>
+            <li>所属：明治大学総合数理学部先端メディアサイエンス学科　2年3組41番</li>
+            <li>氏名：新嶌　道大</li>
+            <li>ふりがな：にいじま　みちひろ</li>
+            <li>生年月日：2003年4月8日(20歳)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>学歴</h2>
+        <table>
+        <tr>
+            <td>
+                入学
+            </td>
+            <td>
+                卒業
+            </td>
+            <td>
+                学校名
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2016年4月
+            </td>
+            <td>
+                2019年3月
+            </td>
+            <td>
+                南六郷中学校
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2019年4月
+            </td>
+            <td>
+                2022年3月
+            </td>
+            <td>
+                都立田園調布高校
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2022年4月
+            </td>
+            <td>
+
+            </td>
+            <td>
+                明治大学総合数理学部先端メディアサイエンス学科
+            </td>
+        </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>趣味・特技</h3>
+        <p>アニメ鑑賞が好きで、特に異世界物のアニメが好きです。好きな作品は<strong>[ソードアートオンライン]</strong>、<strong>「冴えない彼女の育てかた」</strong>です。
+            特技はスポーツ全般です。<br>特にバスケットボールが好きで、中学校から高校までバスケットボール部に所属していました。運動をした後の食事はとてもおいしくて人生の楽しみの1つです。</p>
+    </div>
+
+    <div class="section">
+        <h4>主な作品</h4>
+        <ul>
+            <li>VR綱渡りゲーム・中野の街を救え-オープンキャンパスでデモを発表</li>
+            <a href="VR綱渡りゲーム.html">「VR綱渡りゲーム・中野の街を救え」はこちら</a>
+            <li>素数弾幕ゲーム-1年生のEP演習で発表</li>
+            <a href="素数弾幕ゲーム.html">「素数弾幕ゲーム」はこちら</a>
+        </ul>
+    </div>
+
+    <script>
+        // JavaScriptを使用してセクションのクリックで詳細を表示
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach((section) => {
+            section.addEventListener('click', () => {
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
